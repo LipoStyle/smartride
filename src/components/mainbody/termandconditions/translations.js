@@ -1,62 +1,108 @@
 export const translations = {
   EN: {
     title: "Terms & Conditions",
-    age_requirement: "The minimum age for the driver is 20 years old for scooters and 22 years old for Quads. A valid driving license held for at least one year is required. For hiring a scooter, an A license is required. For hiring a Quad, a B license is required.",
-    booking_length: "The minimum booking length and charge is one day. If the renter wishes to extend the rental period, they must contact us to modify the rental contract and understand the extra charges that may apply. Late vehicle returns may incur additional fees.",
-    helmets: "We provide new helmets, and you are obliged to wear them while driving.",
-    police_fines: "Police fines or tickets are the responsibility of the driver and must be paid by the driver.",
-    insurance_assistance: "All vehicles are covered by insurance and 24-hour assistance throughout the island.",
-    accident_damage: "In case of an accident or vehicle damage, the renter must cover the repair costs.",
-    fuel_return: "The renter must return the vehicle with the same amount of fuel as when collected.",
-    deposit: "A 50% deposit is required for online bookings. For cancellations made more than 10 days before the booking date, we refund 100% of the deposit. Cancellations made less than 10 days before the booking will result in the deposit being non-refundable.",
-    unlimited_mileage: "Unlimited mileage is included in our rates.",
-    additional_driver: "An additional driver option is available for 3 euros per day. The additional driver must accept the same terms and conditions as the main driver.",
-    rates: "Our rates are final and include VAT and all taxes. There are no hidden costs.",
-    after_hours: "We offer vehicle delivery and collection after hours (20:00 – 10:00) for an additional cost of 20,00€ per delivery or collection."
+    age_requirement:
+      "Drivers must be at least 21 years old for scooters and 23 for cars or ATVs. All drivers must have held a valid license for at least one year. A Category A license is required for scooter rentals, while a Category B license is required for cars and ATVs.",
+    booking_length:
+      "The minimum rental period and charge is one day. To extend the rental, the renter must contact us in advance to update the contract; additional charges will apply. Late returns may incur extra fees.",
+    helmets:
+      "Complimentary new helmets are provided, and their use is mandatory at all times while driving.",
+    police_fines:
+      "All traffic violations and fines are the sole responsibility of the driver and must be settled by them.",
+    insurance_assistance:
+      "All vehicles include third-party insurance and 24-hour island-wide assistance. Please contact us for additional coverage options.",
+    accident_damage:
+      "In the event of an accident or vehicle damage, the renter is responsible for covering the full cost of repairs.",
+    fuel_return:
+      "The vehicle must be returned with the same fuel level as recorded at the time of collection.",
+    deposit:
+      "A 50% deposit is required for online bookings. Cancellations made more than 10 days before the start date are eligible for a 100% refund. Deposits are non-refundable for cancellations made within 10 days of the booking.",
+    unlimited_mileage: "Unlimited mileage is included in all our rates.",
+    additional_driver:
+      "An additional driver can be added for €3 per day. The additional driver must agree to the same terms and conditions as the primary driver.",
+    rates:
+      "Our rates are final, including VAT and all applicable taxes. There are no hidden fees.",
+    after_hours:
+      "Vehicle delivery and collection outside of standard hours (20:00 – 10:00) is available for a fee of €20.00 per service.",
   },
   GR: {
     title: "Όροι και Προϋποθέσεις",
-    age_requirement: "Η ελάχιστη ηλικία για τον οδηγό είναι 20 ετών για τα σκούτερ και 22 ετών για τα Quads. Απαιτείται έγκυρη άδεια οδήγησης για τουλάχιστον ένα χρόνο. Για την ενοικίαση σκούτερ απαιτείται άδεια οδήγησης κατηγορίας Α. Για την ενοικίαση Quad απαιτείται άδεια οδήγησης κατηγορίας Β.",
-    booking_length: "Η ελάχιστη διάρκεια κράτησης και χρέωσης είναι μία ημέρα. Εάν ο ενοικιαστής επιθυμεί να επεκτείνει την περίοδο ενοικίασης, πρέπει να επικοινωνήσει μαζί μας για να τροποποιήσουμε το συμβόλαιο ενοικίασης και να κατανοήσει τις επιπλέον χρεώσεις που μπορεί να ισχύουν. Οι καθυστερημένες επιστροφές οχημάτων μπορεί να επιφέρουν πρόσθετες χρεώσεις.",
-    helmets: "Παρέχουμε καινούργια κράνη, και είστε υποχρεωμένοι να τα φοράτε κατά την οδήγηση.",
-    police_fines: "Τα πρόστιμα ή τα εισιτήρια της αστυνομίας είναι ευθύνη του οδηγού και πρέπει να πληρώνονται από τον οδηγό.",
-    insurance_assistance: "Όλα τα οχήματα καλύπτονται από ασφάλιση και 24ωρη βοήθεια σε όλο το νησί.",
-    accident_damage: "Σε περίπτωση ατυχήματος ή ζημιάς στο όχημα, ο ενοικιαστής πρέπει να καλύψει το κόστος επισκευής.",
-    fuel_return: "Ο ενοικιαστής πρέπει να επιστρέψει το όχημα με την ίδια ποσότητα καυσίμου που είχε κατά την παραλαβή.",
-    deposit: "Απαιτείται προκαταβολή 50% για διαδικτυακές κρατήσεις. Για ακυρώσεις που γίνονται περισσότερες από 10 ημέρες πριν από την ημερομηνία κράτησης, επιστρέφουμε το 100% της προκαταβολής. Οι ακυρώσεις που γίνονται λιγότερο από 10 ημέρες πριν από την κράτηση θα έχουν ως αποτέλεσμα η προκαταβολή να μην είναι επιστρέψιμη.",
-    unlimited_mileage: "Η απεριόριστη χιλιομετρική κάλυψη περιλαμβάνεται στις τιμές μας.",
-    additional_driver: "Η επιλογή επιπλέον οδηγού είναι διαθέσιμη με 3 ευρώ την ημέρα. Ο επιπλέον οδηγός πρέπει να αποδεχτεί τους ίδιους όρους και προϋποθέσεις με τον κύριο οδηγό.",
-    rates: "Οι τιμές μας είναι τελικές και περιλαμβάνουν ΦΠΑ και όλους τους φόρους. Δεν υπάρχουν κρυφά κόστη.",
-    after_hours: "Προσφέρουμε παράδοση και παραλαβή οχημάτων μετά από ώρες (20:00 – 10:00) με επιπλέον κόστος 20,00€ ανά παράδοση ή παραλαβή."
+    age_requirement:
+      "Η ελάχιστη ηλικία οδηγού είναι τα 21 έτη για σκούτερ και τα 23 για αυτοκίνητα ή ATV. Απαιτείται κατοχή έγκυρης άδειας οδήγησης για τουλάχιστον ένα έτος. Για την ενοικίαση σκούτερ απαιτείται δίπλωμα Κατηγορίας Α, ενώ για αυτοκίνητα και ATV απαιτείται Κατηγορίας Β.",
+    booking_length:
+      "Η ελάχιστη διάρκεια ενοικίασης και χρέωσης είναι μία ημέρα. Για παράταση της περιόδου, ο ενοικιαστής πρέπει να επικοινωνήσει μαζί μας για την τροποποίηση του συμβολαίου. Οι εκπρόθεσμες επιστροφές ενδέχεται να επιφέρουν πρόσθετες χρεώσεις.",
+    helmets:
+      "Παρέχονται δωρεάν καινούργια κράνη, η χρήση των οποίων είναι υποχρεωτική κατά την οδήγηση.",
+    police_fines:
+      "Τα πρόστιμα και οι τροχαίες παραβάσεις επιβαρύνουν αποκλειστικά τον οδηγό και πρέπει να εξοφλούνται από τον ίδιο.",
+    insurance_assistance:
+      "Όλα τα οχήματα καλύπτονται από ασφάλεια προς τρίτους και 24ωρη οδική βοήθεια σε όλο το νησί. Για επιπλέον καλύψεις, παρακαλούμε επικοινωνήστε μαζί μας.",
+    accident_damage:
+      "Σε περίπτωση ατυχήματος ή ζημιάς στο όχημα, ο ενοικιαστής υποχρεούται να καλύψει το κόστος επισκευής.",
+    fuel_return:
+      "Το όχημα πρέπει να επιστραφεί με την ίδια ποσότητα καυσίμου που είχε κατά την παραλαβή.",
+    deposit:
+      "Απαιτείται προκαταβολή 50% για online κρατήσεις. Για ακυρώσεις άνω των 10 ημερών πριν την κράτηση, επιστρέφεται το 100% της προκαταβολής. Για ακυρώσεις σε διάστημα μικρότερο των 10 ημερών, η προκαταβολή δεν επιστρέφεται.",
+    unlimited_mileage: "Στις τιμές μας περιλαμβάνονται απεριόριστα χιλιόμετρα.",
+    additional_driver:
+      "Δυνατότητα επιπλέον οδηγού με 3€ την ημέρα. Ο επιπλέον οδηγός δεσμεύεται από τους ίδιους όρους με τον κύριο οδηγό.",
+    rates:
+      "Οι τιμές μας είναι τελικές και περιλαμβάνουν ΦΠΑ και όλους τους φόρους. Δεν υπάρχουν κρυφές χρεώσεις.",
+    after_hours:
+      "Προσφέρουμε παράδοση και παραλαβή εκτός ωραρίου (20:00 – 10:00) με επιπλέον κόστος 20,00€ ανά υπηρεσία.",
   },
   IT: {
     title: "Termini e Condizioni",
-    age_requirement: "L'età minima per il conducente è di 20 anni per gli scooter e di 22 anni per i Quad. È richiesta una patente di guida valida da almeno un anno. Per noleggiare uno scooter è necessaria una patente di guida di categoria A. Per noleggiare un Quad è necessaria una patente di guida di categoria B.",
-    booking_length: "La durata minima della prenotazione e del pagamento è di un giorno. Se il noleggiatore desidera estendere il periodo di noleggio, deve contattarci per modificare il contratto di noleggio e comprendere eventuali costi aggiuntivi. I ritardi nella restituzione del veicolo possono comportare costi aggiuntivi.",
-    helmets: "Forniamo caschi nuovi, ed è obbligatorio indossarli durante la guida.",
-    police_fines: "Le multe o i biglietti della polizia sono a carico del conducente e devono essere pagati dal conducente.",
-    insurance_assistance: "Tutti i veicoli sono coperti da assicurazione e assistenza 24 ore su 24 in tutta l'isola.",
-    accident_damage: "In caso di incidente o danno al veicolo, il noleggiatore deve coprire i costi di riparazione.",
-    fuel_return: "Il noleggiatore deve restituire il veicolo con la stessa quantità di carburante di quando è stato ritirato.",
-    deposit: "È richiesto un deposito del 50% per le prenotazioni online. Per le cancellazioni effettuate più di 10 giorni prima della data di prenotazione, rimborsiamo il 100% del deposito. Le cancellazioni effettuate meno di 10 giorni prima della prenotazione comporteranno la perdita del deposito.",
-    unlimited_mileage: "Il chilometraggio illimitato è incluso nelle nostre tariffe.",
-    additional_driver: "L'opzione di un conducente aggiuntivo è disponibile a 3 euro al giorno. Il conducente aggiuntivo deve accettare gli stessi termini e condizioni del conducente principale.",
-    rates: "Le nostre tariffe sono finali e includono IVA e tutte le tasse. Nessun costo nascosto.",
-    after_hours: "Offriamo consegna e ritiro del veicolo fuori orario (20:00 – 10:00) per un costo aggiuntivo di 20,00€ per consegna o ritiro."
+    age_requirement:
+      "L'età minima è di 21 anni per gli scooter e 23 anni per auto o ATV. Il conducente deve possedere una patente valida da almeno un anno. È richiesta la categoria A per gli scooter e la categoria B per auto e ATV.",
+    booking_length:
+      "La durata minima del noleggio e della tariffa è di un giorno. Per estendere il noleggio, è necessario contattarci in anticipo per modificare il contratto. La riconsegna tardiva può comportare costi aggiuntivi.",
+    helmets:
+      "Forniamo caschi nuovi gratuitamente; il loro uso è obbligatorio durante la guida.",
+    police_fines:
+      "Le sanzioni amministrative e le multe sono a carico del conducente e devono essere saldate dallo stesso.",
+    insurance_assistance:
+      "Tutti i veicoli includono assicurazione per responsabilità civile e assistenza stradale 24 ore su 24 su tutta l'isola.",
+    accident_damage:
+      "In caso di incidente o danni al veicolo, il noleggiatore è tenuto a coprire i costi di riparazione.",
+    fuel_return:
+      "Il veicolo deve essere riconsegnato con lo stesso livello di carburante presente al momento del ritiro.",
+    deposit:
+      "È richiesto un deposito del 50% per le prenotazioni online. Rimborso del 100% per cancellazioni oltre 10 giorni dalla data di inizio. Il deposito non è rimborsabile per cancellazioni entro 10 giorni.",
+    unlimited_mileage:
+      "Il chilometraggio illimitato è incluso in tutte le tariffe.",
+    additional_driver:
+      "È possibile aggiungere un conducente extra per 3€ al giorno, previa accettazione dei termini contrattuali.",
+    rates:
+      "Le nostre tariffe sono finali e includono IVA e tutte le tasse. Nessun costo nascosto.",
+    after_hours:
+      "Il servizio di consegna e ritiro fuori orario (20:00 – 10:00) è disponibile al costo di 20,00€.",
   },
   GER: {
     title: "Allgemeine Geschäftsbedingungen",
-    age_requirement: "Das Mindestalter für den Fahrer beträgt 20 Jahre für Roller und 22 Jahre für Quads. Ein gültiger Führerschein, der seit mindestens einem Jahr gültig ist, wird benötigt. Für das Mieten eines Rollers ist ein Führerschein der Klasse A erforderlich. Für das Mieten eines Quads ist ein Führerschein der Klasse B erforderlich.",
-    booking_length: "Die Mindestbuchungsdauer und Gebühr beträgt einen Tag. Wenn der Mieter die Mietdauer verlängern möchte, muss er uns kontaktieren, um den Mietvertrag zu ändern und die zusätzlichen Gebühren zu verstehen, die anfallen können. Verspätete Rückgaben des Fahrzeugs können zusätzliche Gebühren nach sich ziehen.",
-    helmets: "Wir stellen neue Helme zur Verfügung, die Sie während der Fahrt tragen müssen.",
-    police_fines: "Bußgelder oder Strafzettel sind die Verantwortung des Fahrers und müssen vom Fahrer bezahlt werden.",
-    insurance_assistance: "Alle Fahrzeuge sind versichert und durch 24-Stunden-Assistenz auf der gesamten Insel abgedeckt.",
-    accident_damage: "Im Falle eines Unfalls oder einer Beschädigung des Fahrzeugs muss der Mieter die Reparaturkosten übernehmen.",
-    fuel_return: "Der Mieter muss das Fahrzeug mit der gleichen Menge Kraftstoff zurückgeben, mit der es abgeholt wurde.",
-    deposit: "Für Online-Buchungen ist eine Anzahlung von 50% erforderlich. Bei Stornierungen, die mehr als 10 Tage vor dem Buchungsdatum erfolgen, erstatten wir 100% der Anzahlung. Stornierungen, die weniger als 10 Tage vor dem Buchungstermin erfolgen, führen dazu, dass die Anzahlung nicht erstattet wird.",
-    unlimited_mileage: "Unbegrenzte Kilometerzahl ist in unseren Tarifen enthalten.",
-    additional_driver: "Eine zusätzliche Fahreroption ist für 3 Euro pro Tag verfügbar. Der zusätzliche Fahrer muss die gleichen Bedingungen akzeptieren wie der Hauptfahrer.",
-    rates: "Unsere Tarife sind endgültig und enthalten die Mehrwertsteuer und alle Steuern. Es gibt keine versteckten Kosten.",
-    after_hours: "Wir bieten die Lieferung und Abholung des Fahrzeugs außerhalb der Geschäftszeiten (20:00 – 10:00) gegen eine zusätzliche Gebühr von 20,00€ pro Lieferung oder Abholung an."
-  }
-}
+    age_requirement:
+      "Das Mindestalter beträgt 21 Jahre für Roller und 23 Jahre für PKW oder ATVs. Der Fahrer muss seit mindestens einem Jahr im Besitz eines gültigen Führerscheins sein. Klasse A ist für Roller erforderlich, Klasse B für PKW und ATVs.",
+    booking_length:
+      "Die Mindestmietdauer beträgt einen Tag. Für eine Verlängerung kontaktieren Sie uns bitte rechtzeitig zur Vertragsanpassung. Bei verspäteter Rückgabe können zusätzliche Gebühren anfallen.",
+    helmets:
+      "Neue Helme werden kostenlos zur Verfügung gestellt; das Tragen während der Fahrt ist gesetzlich vorgeschrieben.",
+    police_fines:
+      "Bußgelder und Strafzettel liegen in der Verantwortung des Fahrers und müssen von diesem beglichen werden.",
+    insurance_assistance:
+      "Alle Fahrzeuge sind haftpflichtversichert und inklusive 24-Stunden-Pannenhilfe auf der ganzen Insel. Kontaktieren Sie uns für Zusatzversicherungen.",
+    accident_damage:
+      "Im Falle eines Unfalls oder Fahrzeugschäden ist der Mieter verpflichtet, die Reparaturkosten zu übernehmen.",
+    fuel_return:
+      "Das Fahrzeug muss mit demselben Kraftstoffstand zurückgegeben werden, der bei der Abholung bestand.",
+    deposit:
+      "Bei Online-Buchungen ist eine Anzahlung von 50 % erforderlich. Stornierungen bis 10 Tage vor Mietbeginn werden zu 100 % erstattet. Danach ist die Anzahlung nicht erstattungsfähig.",
+    unlimited_mileage:
+      "Unbegrenzte Kilometer sind in unseren Preisen enthalten.",
+    additional_driver:
+      "Ein Zusatzfahrer kann für 3€ pro Tag hinzugefügt werden und muss denselben Bedingungen zustimmen.",
+    rates:
+      "Unsere Preise sind Endpreise inklusive MwSt. und aller Steuern. Keine versteckten Kosten.",
+    after_hours:
+      "Zustellung und Abholung außerhalb der Geschäftszeiten (20:00 – 10:00) sind gegen eine Gebühr von 20,00€ möglich.",
+  },
+};

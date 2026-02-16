@@ -47,7 +47,9 @@
 .hero-button {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 /* 🎬 When Elements Become Visible */
@@ -60,12 +62,12 @@
 
 /* 🏆 Title */
 .hero-title {
-  text-shadow: 
+  text-shadow:
     0px 0px 6px var(--color-accent-purple),
     0px 0px 8px var(--color-accent-light-blue),
     0px 0px 12px rgba(255, 255, 255, 0.7);
   color: var(--color-background-light);
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 700;
   letter-spacing: 1px;
   max-width: 700px;

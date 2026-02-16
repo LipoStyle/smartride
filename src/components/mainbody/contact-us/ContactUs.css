@@ -1,59 +1,84 @@
 /* ContactUs.css */
 
-/* Apply the background image to the whole page */
 .contact-us {
+  position: relative;
   margin: 0;
   padding: 0;
-  background-image: url("../../../images//contactus/background.jpg"); /* Replace with your actual image path */
+  /* Ensure the container itself doesn't hide the map breaking out */
+  overflow-x: hidden;
+  background-image: url("../../../images//contactus/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Ensures the background image stays in place when scrolling */
-  z-index: -2; /* Ensure content is above the overlay */
+  background-attachment: fixed;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Dark overlay to improve text readability */
 .contact-us::before {
-  content: '';
-  position: absolute; /* Fixed so it covers the entire viewport */
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #555050b1;
-  z-index: -2; /* Ensure the overlay is behind the content */
+  z-index: -1;
 }
 
-/* The main container */
-.contact-us {
-  position: relative; /* Necessary for the overlay to work correctly */
-  margin: 0 auto;
-  z-index: 1; /* Ensure content is above the overlay */
-}
-
-/* Greeting message styling (already covered) */
-
-/* Info and form section styling */
 .info-and-form-section {
   width: 100%;
-
+  max-width: 1200px; /* Standard site width */
+  margin: 0 auto; /* Centers the form content */
   display: flex;
   justify-content: center;
   gap: 40px;
-  z-index: 1; /* Ensure content is above the overlay */
+  padding: 40px 20px;
+  flex: 1;
 }
 
-/* Ensure everything remains responsive */
+/* --- FULL WIDTH MAP LOGIC --- */
+.map-wrapper {
+  /* This forces the div to be exactly the width of the screen */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  line-height: 0;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.map-wrapper iframe {
+  width: 100%; /* Fills the 100vw wrapper */
+  height: 500px; /* Set the desktop height here */
+  display: block;
+  border: none;
+  filter: grayscale(30%) invert(90%) contrast(90%);
+  transition: filter 0.5s ease;
+}
+
+.map-wrapper:hover iframe {
+  filter: grayscale(0%) invert(0%) contrast(100%);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .contact-us {
-    padding: 20px;
-  }
   .info-and-form-section {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
-  /* Apply the background image to the whole page */
+
   .contact-us {
-    background-position: left;
     background-attachment: scroll;
+  }
+
+  .map-wrapper iframe {
+    height: 350px; /* Good height for mobile */
   }
 }

@@ -8,6 +8,7 @@
 
 .content-container {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 40px;
   margin-bottom: 30px;
@@ -51,8 +52,7 @@
   text-align: center;
   flex: 1;
   max-width: 400px;
-    /* background-color: unset; */
-
+  /* background-color: unset; */
 }
 
 .service-card h4 {
@@ -71,14 +71,15 @@
   justify-content: center;
   align-items: center;
   gap: 6px;
- 
 }
 /* 🚀 Default animation setup */
 .animate-section,
 .animate {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 /* ✅ When elements enter viewport */
@@ -87,16 +88,16 @@
   transform: translateY(0);
 }
 
-@media (max-width:1080px) {
-  .text-section h2{
+@media (max-width: 1080px) {
+  .text-section h2 {
     font-size: 1.5rem;
   }
-  .text-section p{
-    font-size: .8rem;
+  .text-section p {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 768px) {
-  .rental-experience{
+  .rental-experience {
     width: 100%;
     padding: 0;
   }
@@ -117,7 +118,7 @@
   .image-section img {
     border-radius: 0px;
   }
-  .text-section{
+  .text-section {
     padding: 12px;
     text-align: center;
   }
@@ -128,8 +129,8 @@
   .text-section p {
     font-size: 0.9rem;
   }
-  .service-card{
+  .service-card {
     width: 90%;
-    margin: 0 auto;    
+    margin: 0 auto;
   }
 }

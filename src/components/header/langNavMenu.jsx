@@ -1,28 +1,28 @@
 export const langNavMenuEN = [
   "Home",
-  "Our Scooters",
+  "Our Fleet",
   "About Us",
   "Terms And Conditions",
-  "Contact Us"
-]
+  "Contact Us",
+];
 export const langNavMenuGR = [
   "Αρχική",
   "Ο Στολος Μας",
   "Σχετικά με εμάς",
   "Όροι και Προϋποθέσεις",
-  "Επικοινωνία"
-]
+  "Επικοινωνία",
+];
 export const langNavMenuIT = [
   "Home",
   "I Nostri Scooter",
   "Chi Siamo",
   "Termini e Condizioni",
-  "Contattaci"
-]
+  "Contattaci",
+];
 export const langNavMenuGER = [
   "Startseite",
   "Unsere Roller",
   "Über uns",
   "Allgemeine Geschäftsbedingungen (AGB)",
-  "Kontaktieren Sie uns"
-]
+  "Kontaktieren Sie uns",
+];

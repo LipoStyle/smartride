@@ -1,6 +1,6 @@
 const translations = {
   EN: {
-    formTitle: "Scooter Reservation",
+    formTitle: "Vehicle Reservation",
     sendingMessage: "Sending reservation...",
     fixErrorsMessage: "Fix the errors and try again.",
     errorMessage: "An error occurred. Please try again.",
@@ -12,8 +12,8 @@ const translations = {
       endDateTime: "Rent Until",
       hasLicense: "I own a motorcycle license (Required)",
       hasCarLicense: "I own a car driver's license (Required for Quads)",
-      selectedScooter: "Select A Scooter",
-      selectScooter: "-- Select a Scooter --",
+      selectedScooter: "Select A Vehicle",
+      selectScooter: "-- Select a Vehicle --",
       submit: "Reserve Now",
     },
     errors: {
@@ -24,11 +24,11 @@ const translations = {
       endDateTime: "End date and time are required.",
       invalidEndDate: "End date/time must be after start date/time.",
       hasLicense: "You must have a motorcycle license.",
-      selectedScooter: "Please select a scooter.",
+      selectedScooter: "Please select a vehicle.",
     },
   },
   GR: {
-    formTitle: "Κράτηση Σκούτερ",
+    formTitle: "Κράτηση Οχήματος",
     sendingMessage: "Αποστολή κράτησης...",
     fixErrorsMessage: "Διορθώστε τα λάθη και προσπαθήστε ξανά.",
     errorMessage: "Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά.",
@@ -40,8 +40,8 @@ const translations = {
       endDateTime: "Ενοικίαση έως",
       hasLicense: "Έχω δίπλωμα μοτοσικλέτας (Απαραίτητο)",
       hasCarLicense: "Έχω δίπλωμα αυτοκινήτου (Απαραίτητο για Quads)",
-      selectedScooter: "Επιλέξτε ένα σκούτερ",
-      selectScooter: "-- Επιλέξτε ένα σκούτερ --",
+      selectedScooter: "Επιλέξτε ένα όχημα ",
+      selectScooter: "-- Επιλέξτε ένα όχημα --",
       submit: "Κάντε Κράτηση",
     },
     errors: {
@@ -50,9 +50,10 @@ const translations = {
       mobile: "Ο αριθμός κινητού πρέπει να περιέχει μόνο αριθμούς.",
       startDateTime: "Η ημερομηνία έναρξης είναι απαραίτητη.",
       endDateTime: "Η ημερομηνία λήξης είναι απαραίτητη.",
-      invalidEndDate: "Η ημερομηνία λήξης πρέπει να είναι μετά την ημερομηνία έναρξης.",
+      invalidEndDate:
+        "Η ημερομηνία λήξης πρέπει να είναι μετά την ημερομηνία έναρξης.",
       hasLicense: "Πρέπει να έχετε δίπλωμα μοτοσικλέτας.",
-      selectedScooter: "Επιλέξτε ένα σκούτερ.",
+      selectedScooter: "Επιλέξτε ένα όχημα.",
     },
   },
   IT: {
@@ -78,7 +79,8 @@ const translations = {
       mobile: "Il numero di cellulare deve contenere solo numeri.",
       startDateTime: "La data di inizio è obbligatoria.",
       endDateTime: "La data di fine è obbligatoria.",
-      invalidEndDate: "La data di fine deve essere successiva alla data di inizio.",
+      invalidEndDate:
+        "La data di fine deve essere successiva alla data di inizio.",
       hasLicense: "Devi avere una patente per motocicli.",
       selectedScooter: "Seleziona uno scooter.",
     },
@@ -95,7 +97,8 @@ const translations = {
       startDateTime: "Mieten ab",
       endDateTime: "Mieten bis",
       hasLicense: "Ich besitze einen Motorradführerschein (Erforderlich)",
-      hasCarLicense: "Ich besitze einen Autoführerschein (Erforderlich für Quads)",
+      hasCarLicense:
+        "Ich besitze einen Autoführerschein (Erforderlich für Quads)",
       selectedScooter: "Wählen Sie einen Roller",
       selectScooter: "-- Wählen Sie einen Roller --",
       submit: "Jetzt Reservieren",
