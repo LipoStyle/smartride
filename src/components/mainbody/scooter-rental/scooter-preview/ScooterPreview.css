@@ -9,7 +9,9 @@
   background-color: rgba(199, 237, 244, 0.9);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* 🖼️ Image */
@@ -18,7 +20,6 @@
   max-width: 350px;
   height: 240px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* 📛 Title */
@@ -36,7 +37,9 @@
   border-radius: 6px;
   text-decoration: none;
   font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .button:hover {
@@ -45,10 +48,14 @@
 }
 
 /* 🎬 ✨ Intersection Observer Animations */
-.animate-preview, .animate-title, .animate-button {
+.animate-preview,
+.animate-title,
+.animate-button {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
 /* When elements enter viewport */

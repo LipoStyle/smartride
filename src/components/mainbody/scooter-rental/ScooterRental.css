@@ -20,7 +20,6 @@
 
 /* Individual scooter preview styling */
 .scooter-preview {
-  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -47,15 +46,15 @@
   .scooter-rental-page .title {
     font-size: 35px;
   }
-.scooter-preview-container {
-  grid-template-columns: 1fr 1fr;
-}
+  .scooter-preview-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 560px) {
- .scooter-preview-container{
+  .scooter-preview-container {
     grid-template-columns: 1fr;
- }
- .scooter-rental-page .title {
-  font-size: 24px;
-}
+  }
+  .scooter-rental-page .title {
+    font-size: 24px;
+  }
 }
