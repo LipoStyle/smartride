@@ -1,0 +1,141 @@
+/* 🎨 Background & Layout */
+.contact-section {
+  position: relative;
+  background-image: 
+    linear-gradient(var(--color-overlay-dark), rgba(149, 154, 125, 0.6)), 
+    url("../../../../images/home/contactbackgorund.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-accent-cyan);
+  overflow: hidden;
+}
+
+/* Ensure content is above the gradient overlay */
+.contact-section-title,
+.contact-section-para,
+.contact-methods {
+  position: relative;
+  z-index: 2; /* Ensures content appears above overlay */
+  padding: 12px;
+  text-align: center;
+  color: var(--color-background-light);
+  letter-spacing: 1px;
+}
+
+/* 🎨 Improve Text Readability */
+.contact-section-para {
+  width: 70%;
+  color: #cee0e4b1;
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* 📱 Responsive Contact Methods */
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  z-index: 2;
+  padding: 20px 0;
+}
+
+/* 🎨 Contact Method Cards */
+.method {
+  background-color: var(--color-accent-cyan);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  width: 320px;
+  color: var(--color-primary-dark);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none; /* Ensure no underlines for links */
+}
+
+/* 🎨 Hover Effect */
+.method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-accent-light-blue);
+}
+
+/* 📱 Contact Text Styling */
+.contact-methods .numbers,
+.method h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+/* 🎨 Method Icons */
+.method img {
+  width: 40px;
+  height: 40px;
+}
+
+/* 🎬 ✨ Intersection Observer Animations */
+.animate-title, .animate-para, .animate-method {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When elements enter viewport */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 16px;
+  }
+  .contact-methods {
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+  .method h3 {
+    font-size: 14px;
+  }
+  .method p {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-section-para {
+    width: 95%;
+    font-size: 14px;
+  }
+  .method {
+    width: 85%;
+  }
+  .contact-methods .numbers,
+  .method h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

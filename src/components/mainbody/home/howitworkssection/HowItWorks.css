@@ -1,0 +1,94 @@
+.how-it-works {
+  background-color: #c7edf465;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.step {
+  flex: 1;
+  background: #c7edf4d2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.how-it-works h2{
+  color: var(--color-primary-dark);
+  font-size: 33px;
+  margin-bottom: 20px;
+}
+
+.step img {
+  width: 320px;
+  border-radius: 24px;
+  margin-bottom: 10px;
+
+  filter: grayscale(100%); /* Converts image to grayscale */
+  filter: blur(5px); /* Applies blur effect */
+  filter: brightness(0.8); /* Adjusts brightness */
+  filter: contrast(150%); /* Adjusts contrast */
+  opacity: .7;
+  cursor: pointer;
+
+  transition: all .3s ease-in-out;
+}
+.step img:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+.step h3{
+  color: var(--color-primary-dark);
+  font-size: 24px;
+
+}
+.step p{
+  color: var(--color-primary-dark);
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+/* Initially hide elements */
+.animate-title, .animate-step {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When elements enter the viewport */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 1180px) {
+  .step img {
+    width: 180px;
+  }
+  
+  .step h3{
+    color: var(--color-primary-dark);
+    font-size: 24px;
+  
+  }
+  .step p{
+    color: var(--color-primary-dark);
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .steps{
+    flex-wrap: wrap;
+  }
+}

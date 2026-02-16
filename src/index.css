@@ -1,0 +1,16 @@
+:root{
+  /* General Colors */
+  --color-overlay-dark: #000000b1; /* Used for dark overlays or modal backgrounds */
+  --color-primary-dark: #04345C; /* Primary dark color, used for headers, footers, or main accents */
+  --color-primary: #5371FF; /* Main primary color, used for buttons, links, or key elements */
+  --color-accent-purple: #8b53ff; /* Accent color, used for highlights or secondary elements */
+  --color-accent-light-blue: #34B3FB; /* Light accent color, good for secondary buttons or backgrounds */
+  --color-accent-cyan: #5CE4E4; /* Cyan accent, used for highlights, hover effects, or other accents */
+  --color-background-light: #fff; /* Light background color, used for main content backgrounds or sections */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

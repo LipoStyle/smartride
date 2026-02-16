@@ -1,0 +1,127 @@
+/* Header Styles */
+.header {
+  position: fixed; /* Keeps the header fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--color-primary-dark);
+  z-index: 1000; /* Ensures the header is above other content */
+  box-shadow: 0 2px 4px var(--color-overlay-dark); /* Optional shadow for better visibility */
+}
+.logo-container{
+  text-decoration: none;
+}
+.logo {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.logo img {
+  width: 90px;
+  border-radius: 24px;
+}
+.logo-name{
+  margin-top: -5px;
+  font-weight: 700;
+  color: var(--color-accent-cyan);
+  letter-spacing: 1px;
+}
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+}
+.nav-menu li {
+  width: 100%;
+}
+.nav-menu a {
+  padding: 3px 6px;
+  font-size: 18px;
+  letter-spacing: 1px;
+
+  color: var(--color-accent-cyan);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+  color: var(--color-accent-purple);
+  transform: translate(0px, -5px);
+}
+
+.language-picker select {
+  padding: 5px;
+  background-color: var(--color-accent-cyan);
+  color: var(--color-primary-dark);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-accent-cyan);
+  transition: all 0.3s ease;
+  border-radius: 24px;
+}
+
+.burger.open .line1 {
+  transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.burger.open .line2 {
+  opacity: 0;
+}
+
+.burger.open .line3 {
+  transform: rotate(45deg) translate(-6px, -5px);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    /* width: 60px; */
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-primary-dark);
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 999; /* Ensures the menu is beneath the header */
+  }
+
+  .nav-menu.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .burger {
+    display: flex;
+    z-index: 1001; /* Ensures the burger icon is above the menu */
+  }
+}

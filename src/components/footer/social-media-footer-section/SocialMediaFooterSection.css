@@ -1,0 +1,50 @@
+.social-media-footer-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+/* ✅ When parent container becomes visible */
+.social-media-footer-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.white-background{
+  width: 100%;
+  height: 10px;
+  display: block;
+  background-color: var(--color-accent-cyan);
+}
+.left{
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.right{
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.facebook{
+  display: block;
+  background-image: url("../../../images/footerimages/facebook.png");
+  width: 32px;
+  height: 32px;
+
+  transition: all .2s ease-in-out;
+}
+.facebook:hover{
+  background-image: url("../../../images/footerimages/facebook-hover.png");
+}
+.instagram{
+  display: block;
+  background-image: url("../../../images/footerimages/instagram.png");
+  width: 32px;
+  height: 32px;
+  transition: all .2s ease-in-out;
+}
+.instagram:hover{
+  background-image: url("../../../images/footerimages/instagram-hover.png");
+}

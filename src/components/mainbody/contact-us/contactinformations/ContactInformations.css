@@ -1,0 +1,149 @@
+/* 🚀 Animation Setup */
+.animate-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ✅ When elements enter viewport */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🎨 General Contact Info Styling */
+.contact-info {
+  padding: 6px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.contact-info hr {
+  margin: 12px auto;
+  border: 3px solid var(--color-accent-cyan);
+  border-radius: 12px;
+}
+
+/* 🏆 Title & Text */
+.text-of-contact-info h2 {
+  margin: 6px auto;
+  font-size: 33px;
+  text-align: center;
+  color: var(--color-accent-cyan);
+}
+
+.text-of-contact-info p {
+  margin: 6px auto;
+  font-size: 15px;
+  text-align: center;
+  color: var(--color-accent-cyan);
+}
+
+/* 📞 Contact Details */
+.contact-info-pairs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info-pairs {
+  padding-left: 21px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 21px;
+  width: 100%;
+  text-align: center;
+}
+
+.pairs-images img,
+.contact-info-pairs img {
+  width: 48px;
+  height: 48px;
+}
+
+/* 📜 Text Formatting */
+.pairs-text {
+  width: 100%;
+  text-align: left;
+}
+
+.pairs-text h3 {
+  color: var(--color-accent-cyan);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.pairs-text p {
+  color: var(--color-accent-cyan);
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* 📧 Clickable Links */
+.clickable {
+  color: var(--color-accent-cyan);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+/* 🌍 Social Media Section */
+.social-media-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media-section h3 {
+  color: var(--color-accent-cyan);
+  margin: 6px auto;
+  font-size: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #34B3FB; /* Light blue on hover */
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  .text-of-contact-info h2 {
+    font-size: 25px;
+  }
+  .pairs-text h3 {
+    font-size: 18px;
+  }
+  .pairs-text p {
+    font-size: 14px;
+  }
+  .pairs-images img,
+  .contact-info-pairs img {
+    width: 42px;
+    height: 42px;
+  }
+}

@@ -1,0 +1,118 @@
+/* MeetOurTeamSection.css */
+.meet-our-team {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.team-member-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.team-member-content h3 {
+  font-size: 2.5rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 10px;
+}
+
+.team-member-content h4 {
+  font-size: .9rem;
+  color:var(--color-background-light);
+  padding: 3px 5px;
+  background-color: var(--color-accent-purple);
+  text-transform: uppercase;
+  margin-bottom: -6px auto 6px 0px;
+  width: fit-content;
+}
+
+.team-member-content p {
+  font-size: 1rem;
+  color: var(--color-primary-dark);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  opacity: 0.9;
+}
+
+.team-member:hover .team-member-image img {
+  transform: scale(1.05);
+}
+
+.reverse{
+  text-align: end;
+}
+.reverse p {
+  text-align: start;
+}
+/* 🚀 Default animation setup */
+.animate-section,
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ✅ When elements enter viewport */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-member {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .reverse p {
+    text-align: center;
+  }
+  .team-member-content{
+    text-align: center;
+  }
+  .team-member-image img {
+    max-width: 100%;
+  }
+
+  .team-member-content h3 {
+    font-size: 1.5rem;
+  }
+  .team-member-content h4 {
+    margin: -6px auto 9px auto;
+    font-size: .7rem;
+  }
+  .team-member-content p {
+    font-size: .9rem;
+  }
+}

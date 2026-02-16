@@ -1,0 +1,66 @@
+/* 🌟 General Styling */
+.free-services-footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ✅ When component becomes visible */
+.free-services-footer-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🏆 Title */
+.free-services-footer-section h3 {
+  color: var(--color-background-light);
+  font-size: 1.8rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out 0.2s;
+}
+
+/* ✅ When title becomes visible */
+.free-services-footer-section.visible h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📜 List Styling */
+.free-services-footer-section ul {
+  color: var(--color-accent-cyan);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  list-style-type: none;
+}
+
+/* 🔥 Individual List Items */
+.free-services-footer-section ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ✅ When list items become visible */
+.free-services-footer-section.visible ul li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+
+  .free-services-footer-section h3 {
+    font-size: 1.6rem;
+  }
+}

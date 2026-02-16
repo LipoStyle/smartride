@@ -1,0 +1,104 @@
+/* 🌟 General Styling */
+.contact-us-footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* 🌟 When in View */
+.contact-us-footer-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📌 Title Styling */
+.contact-us-footer-section h3 {
+  font-size: 1.5rem;
+  color: var(--color-background-light);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When title enters the viewport */
+.contact-us-footer-section.visible h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📌 List Styling */
+.contact-us-footer-section ul {
+  color: var(--color-accent-cyan);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+/* 📌 List Items */
+.contact-us-footer-section ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When item enters the viewport */
+.contact-us-footer-section.visible ul li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📌 Name Labels */
+.contact-us-footer-section .name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-background-light);
+}
+
+/* 📌 Contact Details */
+.contact-us-footer-section .items {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* 📌 Clickable Links (Phone + Email) */
+.contact-link {
+  font-size: 1rem;
+  color: var(--color-accent-cyan);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+/* 📌 Hover Effect */
+.contact-link:hover {
+  color: var(--color-accent-light-blue);
+  text-decoration: underline;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .contact-us-footer-section {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contact-us-footer-section .items {
+    padding-left: 0;
+  }
+}

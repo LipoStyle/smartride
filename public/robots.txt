@@ -1,0 +1,12 @@
+# robots.txt for https://www.smartride.gr
+# Learn more: https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /config/
+
+Sitemap: https://www.smartride.gr/sitemap.xml

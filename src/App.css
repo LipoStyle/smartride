@@ -1,0 +1,16 @@
+.home,
+.scooter-rental-page,
+.contact-us,
+.about,
+.scooter-reservation-form{
+  padding-top: 100px;
+}
+@media (max-width: 768px) {
+  .home,
+  .scooter-rental-page,
+  .contact-us,
+  .about,
+  .scooter-reservation-form{
+    padding-top: 80px;
+  }
+}

@@ -1,0 +1,80 @@
+.terms-and-conditions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px 20px ;
+  background-color: #c7edf4d2;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+
+}
+
+.container {
+  max-width: 900px;
+  background-color: #f3f3ff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.terms-and-conditions  h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #1e4767;
+  margin-bottom: 30px;
+}
+
+.terms-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.terms-list li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--color-primary-dark);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.terms-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary-dark);
+  font-size: 24px;
+  line-height: 1;
+}
+/* 🚀 Default animation setup */
+.animate-title, 
+.animate-list {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ✅ When elements enter viewport */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .terms-and-conditions{
+    width: 100%;
+    padding: 99px 9px 10px 9px;
+  }
+  .terms-and-conditions  h1 {
+    font-size: 24px;
+  }
+
+  .terms-list li {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+
+  .terms-list li::before {
+    font-size: 18px;
+  }
+}

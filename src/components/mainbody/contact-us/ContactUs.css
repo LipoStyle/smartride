@@ -1,0 +1,59 @@
+/* ContactUs.css */
+
+/* Apply the background image to the whole page */
+.contact-us {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../../images//contactus/background.jpg"); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Ensures the background image stays in place when scrolling */
+  z-index: -2; /* Ensure content is above the overlay */
+}
+
+/* Dark overlay to improve text readability */
+.contact-us::before {
+  content: '';
+  position: absolute; /* Fixed so it covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #555050b1;
+  z-index: -2; /* Ensure the overlay is behind the content */
+}
+
+/* The main container */
+.contact-us {
+  position: relative; /* Necessary for the overlay to work correctly */
+  margin: 0 auto;
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+/* Greeting message styling (already covered) */
+
+/* Info and form section styling */
+.info-and-form-section {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+/* Ensure everything remains responsive */
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 20px;
+  }
+  .info-and-form-section {
+    flex-direction: column;
+  }
+  /* Apply the background image to the whole page */
+  .contact-us {
+    background-position: left;
+    background-attachment: scroll;
+  }
+}

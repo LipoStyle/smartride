@@ -1,0 +1,186 @@
+/* 🌟 General Styling */
+.instructions-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #c7edf4d2;
+  margin-bottom: 0px;
+}
+
+/* 🚀 Animated Section */
+.instructions-section, 
+.instructions-section h3, 
+.instructions-section p, 
+.instructions-section ul li {
+  opacity: 1; /* Prevents visibility issues */
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ✅ When elements enter viewport */
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* 🏆 Title */
+.instructions-section h3 {
+  font-size: 2.5rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* 📜 Description */
+.instructions-section p {
+  font-size: 1.2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 80%;
+}
+
+/* 🔢 Steps Grid */
+.instructions-section ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* 📍 Individual Step */
+.instructions-section ul li {
+  position: relative;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🛠 Dynamic Background Images */
+.instructions-section ul li:nth-child(1) { background-image: url('../../../../images/home/scouter1.jpg'); }
+.instructions-section ul li:nth-child(2) { background-image: url('../../../../images/home/scouter2.jpg'); }
+.instructions-section ul li:nth-child(3) { background-image: url('../../../../images/home/scouters.jpg'); }
+.instructions-section ul li:nth-child(4) { background-image: url('../../../../images/home/scouter1.jpg'); }
+.instructions-section ul li:nth-child(5) { background-image: url('../../../../images/home/scouter2.jpg'); }
+
+/* 🎨 Step Hover Effect */
+.instructions-section ul li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼 Overlay for Text Visibility */
+.instructions-section ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+/* 🏆 Step Number & Description */
+.number-count {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  gap: 6px;
+}
+
+/* 🎨 Number Styling */
+.number-count p:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: var(--color-accent-cyan); /* Keeps original cyan color */
+  padding: 10px 20px;
+  border-radius: 50%;
+  color: var(--color-primary-dark); /* Keeps dark primary color */
+}
+
+/* 🎨 Step Description */
+.number-count p:nth-child(2) {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--color-accent-cyan); /* Keeps the same cyan color */
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .instructions-section h3 {
+    font-size: 2rem;
+  }
+  .instructions-section p {
+    font-size: 1.1rem;
+  }
+  .number-count p:nth-child(1) {
+    font-size: 2rem;
+  }
+  .number-count p:nth-child(2) {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .instructions-section h3 {
+    font-size: 1.8rem;
+  }
+  .instructions-section p {
+    font-size: 1rem;
+  }
+  .instructions-section ul {
+    gap: 15px;
+  }
+  .number-count p:nth-child(1) {
+    font-size: 1.6rem;
+  }
+  .number-count p:nth-child(2) {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .instructions-section h3 {
+    font-size: 1.5rem;
+  }
+  .instructions-section p {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+  .instructions-section ul {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .number-count p:nth-child(1) {
+    font-size: 1.4rem;
+  }
+  .number-count p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+}

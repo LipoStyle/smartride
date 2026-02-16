@@ -1,0 +1,73 @@
+/* 🛵 Scooter Card */
+.scooter-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 20px;
+  background-color: rgba(199, 237, 244, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🖼️ Image */
+.scooter-image img {
+  width: 100%;
+  max-width: 350px;
+  height: 240px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 📛 Title */
+.scooter-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+/* 🔵 Rent Now Button */
+.button {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--color-accent-light-blue);
+  transform: scale(1.05);
+}
+
+/* 🎬 ✨ Intersection Observer Animations */
+.animate-preview, .animate-title, .animate-button {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When elements enter viewport */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .scooter-image img {
+    max-width: 280px;
+  }
+
+  .scooter-title {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}

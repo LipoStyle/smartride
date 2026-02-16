@@ -1,0 +1,45 @@
+/* 🚀 Animation Setup */
+.animate-title, 
+.animate-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ✅ When elements enter viewport */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🎨 Title Styling */
+.title {
+  padding: 40px 0px;
+  font-size: 36px;
+  color: var(--color-accent-cyan);
+  text-align: center;
+}
+
+/* 📝 Quote Styling */
+.quote-para {
+  font-size: 18px;
+  color: #d9f5fbd9;
+  letter-spacing: 1px;
+  text-align: center;
+  max-width: 80%;
+  margin: 12px auto;
+}
+
+/* 📱 Responsive Styling */
+@media (max-width: 768px) {
+  .title {
+    font-size: 27px;
+    padding: 40px 0px 20px 0px;
+  }
+  
+  .quote-para {
+    font-size: 15px;
+    margin: 6px auto;
+    letter-spacing: 0px;
+  }
+}

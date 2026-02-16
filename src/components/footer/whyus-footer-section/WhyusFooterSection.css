@@ -1,0 +1,86 @@
+/* 🌟 General Styling */
+.whyus-footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ✅ When element enters viewport */
+.whyus-footer-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🏆 Title */
+.whyus-footer-section h3 {
+  color: var(--color-background-light);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* 🎯 Animate Title */
+.whyus-footer-section h3.animate-title {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.whyus-footer-section.visible h3.animate-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📌 List */
+.whyus-footer-section ul {
+  color: var(--color-accent-cyan);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* 🔹 Individual List Items */
+.whyus-footer-section ul li {
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* 🎯 Animate List Items */
+.whyus-footer-section ul li.animate-item {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.whyus-footer-section.visible ul li.animate-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .whyus-footer-section {
+    text-align: center;
+    list-style-position: inside;
+    margin: 0 auto;
+  }
+
+  .whyus-footer-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .whyus-footer-section ul li {
+    font-size: 0.95rem;
+  }
+}

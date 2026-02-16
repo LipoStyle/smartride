@@ -1,0 +1,94 @@
+/* ContactForm.css */
+.form-container{
+  width: 100%;
+}
+form {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #04345ca1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(139, 83, 255, 0.1);
+}
+
+.form-container .form-title {
+  font-size: 24px;
+  color: var(--color-accent-cyan); /* Dark Blue */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container .form-group {
+  margin-bottom: 15px;
+}
+
+.form-container .form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-container .form-group input,
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #d9f5fbd9;
+  color: var(--color-primary-dark);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container .form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.form-container button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: var(--color-primary); /* Primary color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: var(--color-accent-purple); /* Accent purple on hover */
+}
+
+.form-container .form-status {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #34B3FB; /* Light blue */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  form{
+    padding: 12px;
+  }
+  .form-container .form-title {
+    font-size: 20px;
+  }
+
+  .form-container .form-group input,
+  .form-container .form-group textarea {
+    font-size: 12px;
+  }
+
+  .form-container button {
+    font-size: 16px;
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  form{
+    width: 96%;
+  }
+}

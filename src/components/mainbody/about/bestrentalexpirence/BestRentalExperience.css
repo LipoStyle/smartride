@@ -1,0 +1,135 @@
+/* BestRentalExperience.css */
+
+.rental-experience {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.text-section {
+  flex: 1;
+}
+.text-section h2 {
+  font-size: 2.5rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 1rem;
+  color: var(--color-primary-dark);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.services-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #bbe7ff65;
+  color: var(--color-background-light);
+  padding: 0px 0px 20px 0px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  max-width: 400px;
+    /* background-color: unset; */
+
+}
+
+.service-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--color-primary-dark);
+  background-color: var(--color-accent-cyan);
+}
+
+.service-card ul {
+  color: var(--color-primary-dark);
+  list-style: circle;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+ 
+}
+/* 🚀 Default animation setup */
+.animate-section,
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ✅ When elements enter viewport */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width:1080px) {
+  .text-section h2{
+    font-size: 1.5rem;
+  }
+  .text-section p{
+    font-size: .8rem;
+  }
+}
+@media (max-width: 768px) {
+  .rental-experience{
+    width: 100%;
+    padding: 0;
+  }
+  .content-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services-section {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .service-card {
+    /* margin: 0 auto; */
+    max-width: 100%;
+  }
+  .image-section img {
+    border-radius: 0px;
+  }
+  .text-section{
+    padding: 12px;
+    text-align: center;
+  }
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+  }
+  .service-card{
+    width: 90%;
+    margin: 0 auto;    
+  }
+}

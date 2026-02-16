@@ -1,0 +1,42 @@
+export const translations = {
+  EN: {
+    pageTitle: "Explore Our Scooters",
+    instructionsTitle: "Instructions",
+    instructionsDescription: "Follow these steps to rent and use our scooters:",
+    step1: "Choose your scooter and reserve it online.",
+    step2: "Pick up the scooter at our designated location.",
+    step3: "Inspect the scooter before use.",
+    step4: "Enjoy your ride!",
+    step5: "Return the scooter to the drop-off point.",
+  },
+  GR: {
+    pageTitle: "Εξερευνήστε τον Στόλο μας",
+    instructionsTitle: "Οδηγίες",
+    instructionsDescription: "Ακολουθήστε αυτά τα βήματα για να νοικιάσετε και να χρησιμοποιήσετε τα σκούτερ μας:",
+    step1: "Επιλέξτε το σκούτερ σας και κάντε κράτηση online.",
+    step2: "Παραλάβετε το σκούτερ από την καθορισμένη τοποθεσία μας.",
+    step3: "Επιθεωρήστε το σκούτερ πριν από τη χρήση.",
+    step4: "Απολαύστε τη βόλτα σας!",
+    step5: "Επιστρέψτε το σκούτερ στο σημείο παράδοσης.",
+  },
+  IT: {
+    pageTitle: "Esplora i Nostri Scooter",
+    instructionsTitle: "Istruzioni",
+    instructionsDescription: "Segui questi passaggi per noleggiare e utilizzare i nostri scooter:",
+    step1: "Scegli il tuo scooter e prenotalo online.",
+    step2: "Ritira lo scooter nella nostra posizione designata.",
+    step3: "Ispeziona lo scooter prima dell'uso.",
+    step4: "Goditi il tuo giro!",
+    step5: "Riconsegna lo scooter al punto di ritiro.",
+  },
+  GER: {
+    pageTitle: "Entdecken Sie Unsere Roller",
+    instructionsTitle: "Anweisungen",
+    instructionsDescription: "Befolgen Sie diese Schritte, um unsere Roller zu mieten und zu nutzen:",
+    step1: "Wählen Sie Ihren Roller aus und reservieren Sie ihn online.",
+    step2: "Holen Sie den Roller an unserem ausgewiesenen Standort ab.",
+    step3: "Überprüfen Sie den Roller vor der Benutzung.",
+    step4: "Genießen Sie Ihre Fahrt!",
+    step5: "Geben Sie den Roller am Abgabepunkt zurück.",
+  }
+};
